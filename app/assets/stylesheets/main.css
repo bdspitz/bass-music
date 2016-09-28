@@ -1,13 +1,13 @@
-a:hover {
-  text-decoration: none;
-}
-
 a:hover .thumbnail img {
   opacity: 0.5;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
+}
+
+.thumbnail {
+  background: transparent;
 }
 
 /* Header */
@@ -41,12 +41,16 @@ html, body {
 
 
 /* Thumbnail */
-.thumbnail {
+a .thumbnail {
   background-color: transparent;
   border: 0;
   border-radius: 0;
   padding: 0;
   height: 350px;
+}
+
+a:hover {
+  text-decoration: none !important;
 }
 
 .title,
